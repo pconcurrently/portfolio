@@ -1,13 +1,32 @@
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 .main-header {
   position: relative;
 }
 .profile-intro {
   position: absolute;
   top: 35%;
-  left: calc((100% - 400px)/2);
+  left: calc((100% - 40vw)/2);
 }
 .profile-intro-text {
   font-family: Lobster;
-  width: 400px;
-  font-size: 50px;
+  width: 40vw;
+  font-size: 4vw;
+}
+.profile-intro-description {
+  font-family: Lobster;
+  font-size: 2vw;
+}
+.profile-intro-img  img {
+  border-radius: 50%;
+  width: 10vw;
+  min-width: 32px;
+  margin: 20px 0;
 }
